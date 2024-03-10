@@ -10,6 +10,7 @@ namespace ConsoleApp3
     {
         public static void Main()
         {
+            Console.WriteLine("Project-3");
             Console.Write("Введите любое положительное число: ");
             try
             {

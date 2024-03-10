@@ -10,7 +10,9 @@ namespace ConsoleApp3
     {
         public static void Main()
         {
-            
+            Console.WriteLine("Project-4");
+            Console.WriteLine("********************Спасибо за покупку!*************************");
+            Console.WriteLine();
         }
     }
 }
