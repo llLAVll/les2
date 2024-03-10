@@ -24,8 +24,10 @@ do
             Task2.Main();
             break;
         case 3:
+            Task3.Main();
             break;
         case 4:
+            Task4.Main();
             break;
         default:
             break;
