@@ -11,8 +11,18 @@ namespace ConsoleApp3
         public static void Main()
         {
             Console.Write("Введите любое положительное число: ");
-            int n = Convert.ToInt32( Console.ReadLine());
-            if (n % 2 ==  0) { Console.WriteLine("Чётное"); }else { Console.WriteLine("Не чётное"); }
+            try
+            {
+                int n = Convert.ToInt32(Console.ReadLine());
+                if (n % 2 == 0) { Console.WriteLine("Чётное"); } else { Console.WriteLine("Не чётное"); }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message + "\n03.Введите корректные данные!");
+                return;
+            }           
+
         }
     }
 }

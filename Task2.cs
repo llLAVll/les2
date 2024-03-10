@@ -7,7 +7,16 @@
             Console.WriteLine("Project-2");
             Console.WriteLine("Введите номер месяц (от 1 до 12)");
             int num = -1;
-            num = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                num = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message + "\n02.Введите корректные данные!");
+                return;
+            }
+
             switch (num)
             {
                 case 1:
@@ -47,8 +56,8 @@
                     Console.WriteLine("Декабрь");
                     break;
                 default:
-                    Console.WriteLine("Неверно указан месяц!");
-                    break;
+                    Console.WriteLine("002.Неверно указан месяц!");
+                    return;
             }
 
         }
